@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+const productoRebaja = "Jerseys de temporadas pasadas"
+const porcentajeRebaja = "40%"
+const compraMinima = 22;
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+
+      <h1>E-commerce del K</h1>
+      <p>Ofertas del mes: Rebajas en {productoRebaja} del {productoRebaja} compra minima {compraMinima}}</p>
     </div>
   );
 }
