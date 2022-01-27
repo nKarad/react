@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 1rem;
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: blueviolet;
+    width: 100%;
+    
+  }
+
+  
+
+  .Navigation {display: flex;
+    width: 100%;
+    
+
+;}
+
