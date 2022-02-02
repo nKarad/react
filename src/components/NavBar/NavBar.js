@@ -1,15 +1,15 @@
 import React from 'react';
 import'./NavBar.css';
-import logo from './logo.png'
+import logoNav from "./logoNav.png";
 
 const NavBar = () => {
     return (
 
 <nav className='Navigation'>
 
-<a href='index.html'><img src={logo} alt='logo' /></a>
+
 <ul>
-    
+{<a className="logoNav" href='index.html'><img src={logoNav} alt='logo' /></a>}
     <li class="inicio"><a href="index.html">Tienda</a></li>
     <li class="inicio"><a href="promociones.html">Promociones</a></li>
     <li class="inicio"><a href="contacto.html">Contactanos</a></li>

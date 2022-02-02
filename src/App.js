@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import'./components/NavBar.css';
-import NavBar from './components/NavBar';
 
+import './App.css';
+import'./components/NavBar/NavBar.css';
+import NavBar from './components/NavBar/NavBar.js';
+import Header from './components/Header/Header';
 
 
 const productoRebaja = "Jerseys de temporadas pasadas"
@@ -18,8 +18,11 @@ function App() {
  
     <div className="App">
       <NavBar/>
+      <Header title="Prueba de titulo mediante prop"
+      subtitle= "Prueba de sub mediante prop"/>
 
-      <h1>E-commerce del K</h1>
+
+   <h1>E-commerce del K</h1>
       <p>Ofertas del mes: Rebajas en {productoRebaja}
        del {porcentajeRebaja} compra minima {compraMinima}</p>
     </div>
