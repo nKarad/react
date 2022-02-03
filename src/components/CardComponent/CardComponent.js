@@ -9,7 +9,7 @@ const CardComponent = (props) => (
                 <CardTitle tag="h5">
                     {props.name}
                 </CardTitle>
-                <img src={props.img} alt = "user-image" width={200} />
+                <img src={props.img} alt = "user-image" width={200} className='FotoCard'/>
                 <CardSubtitle
                     className="mb-2 text-muted"
                     tag="h6"
