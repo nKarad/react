@@ -55,8 +55,8 @@ const App = () => {
 
       <div >
       <p>{counter}</p>    
-        <button onClick={handlerCounterUp}>Más Pepe</button>
-        <button onClick={handlerCounterDown}>Menos Pepe</button>
+        <button onClick={handlerCounterUp} className='Botoncito'>Más Pepe</button>
+        <button onClick={handlerCounterDown} className='Botoncito'>Menos Pepe</button>
       </div>
 
     </div>
