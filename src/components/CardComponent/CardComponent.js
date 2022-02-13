@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap'
 import "./CardComponent.css"
+import ItemCount from '../ItemListContainer/ItemCount/ItemCount';
 
 const CardComponent = (props) => (  
     <div className='containerCard'>
@@ -17,12 +18,11 @@ const CardComponent = (props) => (
                     {props.profession}
                 </CardSubtitle>
                 <CardText>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                    Aca ponele que meto un lorem
                 </CardText>
-                <Button>
-                    Button
-                </Button>
+                <ItemCount/>
             </CardBody>
+            
         </Card>
     </div>
 )

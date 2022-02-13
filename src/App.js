@@ -5,38 +5,27 @@ import './components/NavBar/NavBar.css';
 import NavBar from './components/NavBar/NavBar.js';
 import Header from './components/Header/Header';
 import CardComponent from './components/CardComponent/CardComponent';
+import ItemListContainer from './components/ItemListContainer/ItemListCointainer';
+import ItemCount from './components/ItemListContainer/ItemCount/ItemCount';
 
 
-const productoRebaja = "Jerseys de temporadas pasadas"
-const porcentajeRebaja = "40%"
-const compraMinima = 10;
+
 
 const App = () => {
 
-  const [counter, setCounter] = useState(0);
-
-  const handlerCounterUp = () => {
-    setCounter(counter + 1);
-  };
-  const handlerCounterDown = () => {
-    setCounter(counter - 1);
-  };
-
-
-
+ 
 
   return (
 
 
     <div className="App">
+
       <NavBar />
+      <ItemListContainer greet ="Bienvenidos al E-commerce del K"
+      />
       <Header title="Prueba de titulo mediante prop"
-        subtitle="Prueba de sub mediante prop" />
+         />
 
-
-      <h1>E-commerce del K</h1>
-      <p>Ofertas del mes: Rebajas en {productoRebaja}
-        del {porcentajeRebaja} compra minima {compraMinima}</p>
 
 
       <CardComponent
@@ -46,22 +35,18 @@ const App = () => {
       <CardComponent
         name="Ricarrdo, con doble r"
         profession="Cuidador de patos"
-        img="https://i.kym-cdn.com/entries/icons/facebook/000/014/896/unnamed.jpg" />
+        img="https://i.kym-cdn.com/entries/icons/facebook/000/014/896/unnamed.jpg"
+         />
       <CardComponent
         name="El hermano del Pepe"
         profession="El Patrón del mal"
-        img="https://ichef.bbci.co.uk/news/640/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg" />
+        img="https://ichef.bbci.co.uk/news/640/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg" 
+        ></CardComponent>
 
-
-      <div >
-      <p>{counter}</p>    
-        <button onClick={handlerCounterUp} className='Botoncito'>Más Pepe</button>
-        <button onClick={handlerCounterDown} className='Botoncito'>Menos Pepe</button>
-      </div>
-
+    {/* nn */}
     </div>
   );
 }
 
-//Falta resolver numeros negativos tengo que rever la clase
+
 export default App;
